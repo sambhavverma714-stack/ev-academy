@@ -1,0 +1,26 @@
+# EV Training School — robots.txt
+# Public site: allow crawling of public pages, block admin/auth internals.
+
+User-agent: *
+Allow: /
+
+# Public pages
+Allow: /$
+Allow: /about
+Allow: /contact
+Allow: /courses
+Allow: /courses/*
+Allow: /faq
+Allow: /privacy
+Allow: /terms
+Allow: /verify-certificate
+
+# Admin & student dashboards, auth, checkout — not for indexing
+Disallow: /admin
+Disallow: /student
+Disallow: /auth
+Disallow: /checkout
+Disallow: /api
+
+# Sitemap
+Sitemap: https://evtrainingschool.example.com/sitemap.xml

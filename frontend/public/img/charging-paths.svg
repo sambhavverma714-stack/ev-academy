@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" font-family="Arial,Helvetica,sans-serif" role="img"><style>.t{font-size:13px;fill:#1b2a3a}.s{font-size:11px;fill:#4a5b6c}.h{font-size:15px;font-weight:700;fill:#1b2a3a}.b{fill:#fff;stroke:#0d7a70;stroke-width:2}.o{stroke:#f57c00;stroke-width:5;fill:none;stroke-linecap:round}.a{stroke:#4a5b6c;stroke-width:2;fill:none;marker-end:url(#m)}</style><defs><marker id="m" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8z" fill="#4a5b6c"/></marker></defs><rect width="640" height="300" rx="10" fill="#f4f8f8"/><text x="20" y="28" class="h">AC charging vs DC fast charging</text>
+<text x="20" y="62" class="t" font-weight="700">AC (Level 1 / 2)</text>
+<g class="b"><rect x="20" y="72" width="130" height="50" rx="8"/><rect x="200" y="72" width="130" height="50" rx="8"/><rect x="380" y="72" width="110" height="50" rx="8"/><rect x="530" y="72" width="90" height="50" rx="8"/></g>
+<g class="t" text-anchor="middle"><text x="85" y="102">Grid / EVSE</text><text x="265" y="102">Onboard charger</text><text x="435" y="102">HV battery</text><text x="575" y="102">Motor</text></g>
+<path class="a" d="M152 97h45M332 97h45"/><text x="175" y="68" class="s" text-anchor="middle">AC</text><text x="355" y="68" class="s" text-anchor="middle">DC</text>
+<text x="20" y="170" class="t" font-weight="700">DC fast charging</text>
+<g class="b"><rect x="20" y="180" width="130" height="50" rx="8"/><rect x="200" y="180" width="130" height="50" rx="8"/><rect x="380" y="180" width="110" height="50" rx="8"/></g>
+<g class="t" text-anchor="middle"><text x="85" y="210">DC charger</text><text x="265" y="204">Charge port</text><text x="265" y="219" class="s">(CCS / NACS)</text><text x="435" y="210">HV battery</text></g>
+<path class="a" d="M152 205h45M332 205h45"/><path d="M265 232v20h-180v-20" fill="none" stroke="#f57c00" stroke-width="2" stroke-dasharray="4 3"/><text x="175" y="268" class="s" text-anchor="middle">Vehicle and charger exchange limits over a data link first</text>
+<text x="520" y="205" class="s">Bypasses the</text><text x="520" y="219" class="s">onboard charger</text></svg>
