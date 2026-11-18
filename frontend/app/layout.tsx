@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { AuthProvider } from "@/contexts/AuthContext";
+import { PwaRegister } from "./pwa-register";
 
 export const metadata: Metadata = {
   title: {
@@ -19,12 +20,22 @@ export const metadata: Metadata = {
     "EV certification",
     "EV engineering",
   ],
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "EV Academy",
+  },
   openGraph: {
     title: "EV Academy · Precision training for electric mobility",
     description:
       "High-voltage safety, battery diagnostics, charging, drive systems and HV wiring — taught in a working lab and certified online.",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#05070a",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -43,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </main>
           <Footer />
+          <PwaRegister />
         </AuthProvider>
       </body>
     </html>
